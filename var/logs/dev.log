@@ -8,3 +8,6 @@
 [2019-05-29 08:40:27] request.INFO: Matched route "homepage". {"route":"homepage","route_parameters":{"_controller":"AppBundle\\Controller\\DefaultController::indexAction","_route":"homepage"},"request_uri":"http://127.0.0.1:8002/","method":"GET"} []
 [2019-05-29 08:40:27] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
 [2019-05-29 08:40:27] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_controller":"web_profiler.controller.profiler:toolbarAction","token":"e5b668","_route":"_wdt"},"request_uri":"http://127.0.0.1:8002/_wdt/e5b668","method":"GET"} []
+[2019-05-29 09:24:09] request.INFO: Matched route "homepage". {"route":"homepage","route_parameters":{"_controller":"AppBundle\\Controller\\DefaultController::indexAction","_route":"homepage"},"request_uri":"http://127.0.0.1:8002/","method":"GET"} []
+[2019-05-29 09:24:09] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2019-05-29 09:24:09] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_controller":"web_profiler.controller.profiler:toolbarAction","token":"34f4dd","_route":"_wdt"},"request_uri":"http://127.0.0.1:8002/_wdt/34f4dd","method":"GET"} []
