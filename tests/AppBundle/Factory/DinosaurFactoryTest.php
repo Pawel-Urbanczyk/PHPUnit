@@ -5,6 +5,7 @@ namespace Tests\AppBundle\Factory;
 
 
 use AppBundle\Entity\Dinosaur;
+use AppBundle\Service\DinosaurLengthDeterminator;
 use PHPUnit\Framework\TestCase;
 use AppBundle\Factory\DinosaurFactory;
 
@@ -17,7 +18,8 @@ class DinosaurFactoryTest extends TestCase
 
     public function setUp()
     {
-        $this->factory = new DinosaurFactory();
+        $mockLengthDeterminator = $this->createMock(DinosaurLengthDeterminator::class);
+        $this->factory = new DinosaurFactory($mockLengthDeterminator);
     }
 
     public function testItGrowsAVelociraptor()
@@ -49,46 +51,20 @@ class DinosaurFactoryTest extends TestCase
     /**
      * @dataProvider getSpecificationTest
      */
-    public function testItGrowsADinosaurFromSpecification(string $spec, bool $expectedIsLarge, bool $expectedIsCarnivorous)
+    public function testItGrowsADinosaurFromSpecification(string $spec, bool $expectedIsCarnivorous)
     {
         $dinosaur = $this->factory->growFromSpecification($spec);
 
-        if($expectedIsLarge) {
-            $this->assertGreaterThanOrEqual(Dinosaur::LARGE, $dinosaur->getLength());
-        }else{
-            $this->assertLessThan(Dinosaur::LARGE, $dinosaur->getLength());
-        }
         $this->assertSame($expectedIsCarnivorous, $dinosaur->isCarnivorous(), 'Diets do not match');
     }
 
     public function getSpecificationTest()
     {
         return[
-            //Specification, is large, is carnivorous
-            ['large carnivorous dinosaur', true, true],
-            'default response' => ['give me all the cookies!!!', false, false],
-            ['large herbivore', true, false],
-        ];
-    }
-
-    /**
-     * @dataProvider getHugeDinosaurSpecTests
-     */
-    public function testItGrowsHugeDinosaur(string $specification)
-    {
-        $dinosaur = $this->factory->growFromSpecification($specification);
-
-        $this->assertGreaterThanOrEqual(Dinosaur::HUGE, $dinosaur->getLength());
-    }
-
-    public function getHugeDinosaurSpecTests()
-    {
-        return [
-            ['huge dinosaur'],
-            ['huge dino'],
-            ['huge'],
-            ['OMG'],
-            ['😱'],
+            //Specification, is carnivorous
+            ['large carnivorous dinosaur', true],
+            'default response' => ['give me all the cookies!!!', false],
+            ['large herbivore', false],
         ];
     }
 }
