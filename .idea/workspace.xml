@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b69c40-f4b9-4557-b639-6607d6ec693d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/_partials/_newDinoForm.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerCompiler.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerCompiler.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/data/test.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/var/data/test.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/logs/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/logs/dev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/sessions/dev/sess_7eeafcab1c270a71f8a5a2a1bc5ebd18" beforeDir="false" afterPath="$PROJECT_DIR$/var/sessions/dev/sess_7eeafcab1c270a71f8a5a2a1bc5ebd18" afterDir="false" />
@@ -47,7 +39,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="441">
@@ -55,6 +47,15 @@
               <folding>
                 <element signature="e#48#97#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="127" lean-forward="true" selection-start-column="73" selection-end-column="127" />
             </state>
           </provider>
         </entry>
@@ -151,6 +152,7 @@
         <option value="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/.circleci/config.yml" />
       </list>
     </option>
   </component>
@@ -246,6 +248,11 @@
             <path>
               <item name="PHPUnit" type="b2602c69:ProjectViewProjectNode" />
               <item name="PHPUnit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PHPUnit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PHPUnit" type="462c0819:PsiDirectoryNode" />
+              <item name=".circleci" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PHPUnit" type="b2602c69:ProjectViewProjectNode" />
@@ -492,12 +499,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559118540337</updated>
-      <workItem from="1559118541679" duration="38984000" />
+      <workItem from="1559118541679" duration="39819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38984000" />
+    <option name="totallyTimeSpent" value="39819000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -812,6 +819,13 @@
           <folding>
             <element signature="e#48#97#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="127" lean-forward="true" selection-start-column="73" selection-end-column="127" />
         </state>
       </provider>
     </entry>
