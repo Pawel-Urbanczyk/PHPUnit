@@ -60,10 +60,8 @@ class EnclosureBuilderService
     {
         for($i=0; $i < $numberOfDinosaurs; $i++){
 
-            $lengths = ['small', 'large', 'huge'];
-            $diets = ['herbivore', 'carnivorous'];
-            $length = $lengths[array_rand($lengths)];
-            $diet = $diets[array_rand($diets)];
+            $length = array_rand(['small', 'large', 'huge']);
+            $diet = array_rand(['herbivore', 'carnivorous']);
             $specification = "{$length} {$diet} dinosaur";
             $dinosaur = $this->dinosaurFactory->growFromSpecification($specification);
 
